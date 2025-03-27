@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5c0d4; /* Blush pink background */
+    color: #5d3a2e; /* Brown text color */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #f1489d; /* Blush pink header */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    color: #3a1205; /* Brown heading */
+    margin: 10px 0;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3a1003; /* Brown link color */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e8b4b8; /* Blush pink hover effect */
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    color: #5d3a2e; /* Brown heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery .item {
+    flex: 1 1 calc(33.333% - 40px); /* Three items per row with gap */
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid #e8b4b8; /* Blush pink border */
+    border-radius: 10px;
+    background-color: #fff; /* White background for images */
+}
+
+.gallery .item img {
+    width: 100%;
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images fill the container */
+    display: block;
+}
+
+/* Contact Form Styles */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    font-weight: bold;
+    color: #5d3a2e; /* Brown label color */
+}
+
+#contactForm input,
+#contactForm textarea {
+    padding: 10px;
+    border: 1px solid #e8b4b8; /* Blush pink border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contactForm button {
+    padding: 10px 20px;
+    background-color: #e8b4b8; /* Blush pink button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#contactForm button:hover {
+    background-color: #d89a9e; /* Darker blush pink on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5d3a2e; /* Brown footer */
+    color: #f9f0eb; /* Blush pink text */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
