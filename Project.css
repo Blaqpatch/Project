@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Black background */
+    background-color: #2a0000; /* Deep maroon background */
     color: #f5d142; /* Gold text color */
 }
 
@@ -44,10 +44,14 @@ nav ul li a {
     text-decoration: none;
     color: #f5d142; /* Gold link color */
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
+/* Nav Hover Effects for About, Contact, Portfolio */
 nav ul li a:hover {
-    color: #ffd700; /* Brighter gold on hover */
+    color: #ffd700; /* Bright gold on hover */
+    text-shadow: 0 0 5px #f5d142;
+    transform: scale(1.05);
 }
 
 /* Section Styles */
@@ -74,9 +78,9 @@ nav ul li a:hover {
     max-width: calc(33.333% - 40px);
     box-sizing: border-box;
     overflow: hidden;
-    border: 2px solid #f5d142; /* Gold border */
+    border: 2px solid #f5d142;
     border-radius: 10px;
-    background-color: #1a1a1a; /* Dark background for contrast */
+    background-color: #1a1a1a;
 }
 
 .gallery .item img {
@@ -97,37 +101,49 @@ nav ul li a:hover {
 
 #contactForm label {
     font-weight: bold;
-    color: #f5d142; /* Gold label color */
+    color: #f5d142;
 }
 
 #contactForm input,
 #contactForm textarea {
     padding: 10px;
-    border: 1px solid #f5d142; /* Gold border */
+    border: 1px solid #f5d142;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #000000; /* Black input background */
+    background-color: #000000;
     color: #f5d142;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Form Fields */
+#contactForm input:hover,
+#contactForm textarea:hover,
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #ffd700;
+    box-shadow: 0 0 5px #ffd700;
+    outline: none;
 }
 
 #contactForm button {
     padding: 10px 20px;
-    background-color: #800000; /* Maroon button */
-    color: #f5d142; /* Gold text */
+    background-color: #800000;
+    color: #f5d142;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 #contactForm button:hover {
-    background-color: #a30000; /* Slightly lighter maroon on hover */
+    background-color: #a30000;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #1a1a1a; /* Dark gray/black footer */
-    color: #f5d142; /* Gold text */
+    background-color: #1a1a1a;
+    color: #f5d142;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
