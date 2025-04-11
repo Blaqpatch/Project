@@ -3,8 +3,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2a0000; /* Deep maroon background */
-    color: #f5d142; /* Gold text color */
+    background-color: #971515;
+    color: #fffbf9;
 }
 
 .container {
@@ -14,15 +14,25 @@ body {
     padding: 20px;
 }
 
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.section, header, footer {
+    animation: fadeIn 1s ease forwards;
+}
+
 /* Header Styles */
 header {
-    background-color: #800000; /* Maroon header */
+    background-color: #353131;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    color: #f5d142; /* Gold heading */
+    color: #f8efec;
     margin: 10px 0;
 }
 
@@ -42,15 +52,14 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #f5d142; /* Gold link color */
+    color: #f7f6f6;
     font-weight: bold;
     transition: all 0.3s ease;
 }
 
-/* Nav Hover Effects for About, Contact, Portfolio */
 nav ul li a:hover {
-    color: #ffd700; /* Bright gold on hover */
-    text-shadow: 0 0 5px #f5d142;
+    color: #4e2a1e; /* Brown hover color */
+    text-shadow: 0 0 5px #4e2a1e;
     transform: scale(1.05);
 }
 
@@ -60,7 +69,7 @@ nav ul li a:hover {
 }
 
 .section h2 {
-    color: #f5d142; /* Gold heading */
+    color: #faf7f6;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -78,9 +87,16 @@ nav ul li a:hover {
     max-width: calc(33.333% - 40px);
     box-sizing: border-box;
     overflow: hidden;
-    border: 2px solid #f5d142;
+    border: 2px solid #e8b4b8;
     border-radius: 10px;
-    background-color: #1a1a1a;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on images */
+.gallery .item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(78, 42, 30, 0.4); /* brown glow */
 }
 
 .gallery .item img {
@@ -101,49 +117,50 @@ nav ul li a:hover {
 
 #contactForm label {
     font-weight: bold;
-    color: #f5d142;
+    color: #fdfdfc;
 }
 
 #contactForm input,
 #contactForm textarea {
     padding: 10px;
-    border: 1px solid #f5d142;
+    border: 1px solid #f1959e;
     border-radius: 5px;
     font-size: 16px;
-    background-color: #000000;
-    color: #f5d142;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect on Form Fields */
+/* Hover effect on contact form input bars */
 #contactForm input:hover,
 #contactForm textarea:hover,
 #contactForm input:focus,
 #contactForm textarea:focus {
-    border-color: #ffd700;
-    box-shadow: 0 0 5px #ffd700;
+    border-color: #4e2a1e;
+    box-shadow: 0 0 5px #4e2a1e;
     outline: none;
 }
 
+/* Send Button with bounce + brown glow */
 #contactForm button {
     padding: 10px 20px;
-    background-color: #800000;
-    color: #f5d142;
+    background-color: #e8b4b8;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 #contactForm button:hover {
-    background-color: #a30000;
+    background-color: #d89a9e;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #4e2a1e;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #1a1a1a;
-    color: #f5d142;
+    background-color: #383737;
+    color: #f9f0eb;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
@@ -152,3 +169,15 @@ footer {
 footer p {
     margin: 0;
 }
+
+.fade-in-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
