@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fashion Design Portfolio showcasing unique and stylish designs, including ready-to-wear, bridal wear, and African traditional clothing.">
     <meta name="keywords" content="fashion design, portfolio, bridal wear, African clothing, ready-to-wear">
-    <title>Fashion Design Portfolio</title>
+ 
     <link rel="stylesheet" href="./Fashion Design Portfolio_files/Project.css">
 </head>
 <body>
