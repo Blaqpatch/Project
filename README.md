@@ -92,14 +92,12 @@
             </div>
         </section>
     </main>
-
-    <footer>
+ <footer>
         <div class="container">
             <p>© 2025 Blaqpatch Fashion Design Portfolio by Unathi Nogantshi. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="./Fashion Design Portfolio_files/Project.js.download"></script>
+  <script src="./Fashion Design Portfolio_files/Project.js.download"></script>
     <script>
         // JavaScript for form handling
         document.getElementById('contactForm').addEventListener('submit', function (e) {
