@@ -24,7 +24,7 @@ Bridal Wear: Bespoke wedding dresses made to your vision
 Made to Order: Formal and casual looks tailored to your body and style
           
 PORTFOLIO
-Explore a curated selection of my most celebrated works. From bold statement pieces to graceful bridal gowns, each design tells a unique story. I create with a deep sense of purpose, honoring every client’s individuality while blending classic tailoring with creative flair.</p
+Explore a curated selection of my most celebrated works. From bold statement pieces to graceful bridal gowns, each design tells a unique story. I create with a deep sense of purpose, honoring every client’s individuality while blending classic tailoring with creative flair.
 
 My portfolio spans a diverse array of garments that cater to different occasions and cultural aesthetics. Whether you're drawn to the luxurious drape of satin or the vibrant energy of African prints, there's something in my collection for everyone.
 
